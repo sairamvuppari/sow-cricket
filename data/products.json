@@ -82,6 +82,48 @@
     ]
   },
   {
+    "id": "prod-000-ss-tiger",
+    "name": "SS Tiger English Willow Cricket Bat",
+    "slug": "ss-tiger-english-willow-bat",
+    "category": "bats",
+    "categoryName": "Cricket Bats",
+    "brand": "SS TON",
+    "price": 9750,
+    "originalPrice": 13000,
+    "discountPercent": 25,
+    "rating": 5.0,
+    "reviewCount": 22,
+    "image": "images/bats/ss-tiger-front.jpg",
+    "gallery": [
+      "images/bats/ss-tiger-front.jpg",
+      "images/bats/ss-tiger-back.jpg",
+      "images/bats/ss-tiger-label.jpg"
+    ],
+    "inStock": true,
+    "stockCount": 9,
+    "badge": "25% OFF",
+    "featured": true,
+    "isBestSeller": true,
+    "specs": {
+      "Willow": "Handcrafted English Willow (April 2026 Batch)",
+      "Model": "SS Tiger / Sunridges TON",
+      "Weight": "1145g (approx. 2 lb 8.4 oz)",
+      "Size / Length": "SH - Short Handle (Length 85 cm)",
+      "MRP": "₹13,000 (Special 25% Off: ₹9,750)",
+      "Grip": "Red Scale Cushion Grip",
+      "Spine & Profile": "Thick contoured edges with extended sweet spot",
+      "Verification": "Authentic Sareen Sports Industries MRP label & QR Verification"
+    },
+    "description": "Authentic SS Tiger English Willow Cricket Bat (Short Handle 85cm). Manufactured by Sareen Sports Industries (SS TON) with hand-selected English willow, factory-tested 1145g pickup, high-impact sweet spot, and embossed red textured SS chrome branding. 100% genuine with factory barcode and holographic security label. MRP ₹13,000 discounted by 25% to ₹9,750.",
+    "tags": [
+      "SS TON",
+      "SS Tiger",
+      "English Willow",
+      "25% OFF",
+      "SH Size 85cm"
+    ]
+  },
+  {
     "id": "prod-sow-wk-combo",
     "name": "SOW Custom Wicket Keeping Gloves + Inners Combo",
     "slug": "sow-custom-wicket-keeping-gloves-inners-combo",
@@ -120,6 +162,132 @@
       "Keeping Gloves",
       "Inners Combo",
       "25% OFF"
+    ]
+  },
+  {
+    "id": "prod-sow-bg-stealth-black",
+    "name": "SOW Custom Stealth Black Split-Finger Batting Gloves",
+    "slug": "sow-custom-stealth-black-batting-gloves",
+    "category": "batting-gloves",
+    "categoryName": "Batting Gloves",
+    "brand": "SOW Custom",
+    "price": 1800,
+    "originalPrice": 2400,
+    "discountPercent": 25,
+    "rating": 5.0,
+    "reviewCount": 18,
+    "image": "images/batting-gloves/sow-batting-gloves-black.jpg",
+    "gallery": [
+      "images/batting-gloves/sow-batting-gloves-black.jpg",
+      "images/batting-gloves/sow-batting-gloves-gold.jpg",
+      "images/batting-gloves/sow-batting-gloves-white-camo.jpg"
+    ],
+    "inStock": true,
+    "stockCount": 14,
+    "badge": "25% OFF",
+    "featured": true,
+    "isBestSeller": true,
+    "specs": {
+      "Brand": "SOW In-House Custom (Direct Factory Craftsmanship)",
+      "Edition": "Stealth All-Black Pro Series",
+      "MRP": "₹2,400 (Special 25% Off: ₹1,800)",
+      "Protection": "High-density multi-split impact foam with articulated finger bars",
+      "Palm": "Soft premium leather palm with double-reinforced thumb patch",
+      "Airflow": "Breathable dual mesh gussets for zero-slip moisture control",
+      "Cuff": "Elasticated sweatband wrist closure with heavy-duty velcro tab"
+    },
+    "description": "SOW Custom In-House Stealth All-Black Batting Gloves. Tailored with high-density impact-dispersing foam split segments for razor-sharp flexibility, supple leather palm for exquisite bat handle touch, and an aggressive matte-black finish. Handcrafted in-house without middleman markups. Special 25% discount: ₹1,800 (MRP ₹2,400).",
+    "tags": [
+      "SOW Custom",
+      "Batting Gloves",
+      "Stealth Black",
+      "Split Finger",
+      "25% OFF",
+      "In-House"
+    ]
+  },
+  {
+    "id": "prod-sow-bg-gold-hex",
+    "name": "SOW Custom Black & Gold Hex Batting Gloves",
+    "slug": "sow-custom-black-gold-hex-batting-gloves",
+    "category": "batting-gloves",
+    "categoryName": "Batting Gloves",
+    "brand": "SOW Custom",
+    "price": 1800,
+    "originalPrice": 2400,
+    "discountPercent": 25,
+    "rating": 5.0,
+    "reviewCount": 21,
+    "image": "images/batting-gloves/sow-batting-gloves-gold.jpg",
+    "gallery": [
+      "images/batting-gloves/sow-batting-gloves-gold.jpg",
+      "images/batting-gloves/sow-batting-gloves-black.jpg",
+      "images/batting-gloves/sow-batting-gloves-white-camo.jpg"
+    ],
+    "inStock": true,
+    "stockCount": 16,
+    "badge": "25% OFF",
+    "featured": true,
+    "isBestSeller": true,
+    "specs": {
+      "Brand": "SOW In-House Custom (Direct Factory Craftsmanship)",
+      "Edition": "Black & Metallic Gold Hex Honeycomb Edition",
+      "MRP": "₹2,400 (Special 25% Off: ₹1,800)",
+      "Protection": "Metallic gold honeycomb armor on lead fingers + segmented foam blocks",
+      "Palm": "Premium soft grip leather palm with airflow perforations",
+      "Gusset": "Breathable cross-ventilation mesh between fingers",
+      "Cuff": "Wide elasticated comfort wristband with custom velcro lock"
+    },
+    "description": "SOW Custom In-House Black & Gold Hex Batting Gloves. Designed with striking metallic gold textured honeycomb armor along the lead fingers and wrist bar, layered shock-absorbing foam padding, and soft leather palm for supreme control and protection against pace bowling. In-house customized direct pricing: ₹1,800 (MRP ₹2,400 - 25% OFF).",
+    "tags": [
+      "SOW Custom",
+      "Batting Gloves",
+      "Gold Hex",
+      "Split Finger",
+      "25% OFF",
+      "In-House"
+    ]
+  },
+  {
+    "id": "prod-sow-bg-white-camo",
+    "name": "SOW Custom White Camo Batting Gloves",
+    "slug": "sow-custom-white-camo-batting-gloves",
+    "category": "batting-gloves",
+    "categoryName": "Batting Gloves",
+    "brand": "SOW Custom",
+    "price": 1800,
+    "originalPrice": 2400,
+    "discountPercent": 25,
+    "rating": 5.0,
+    "reviewCount": 15,
+    "image": "images/batting-gloves/sow-batting-gloves-white-camo.jpg",
+    "gallery": [
+      "images/batting-gloves/sow-batting-gloves-white-camo.jpg",
+      "images/batting-gloves/sow-batting-gloves-black.jpg",
+      "images/batting-gloves/sow-batting-gloves-gold.jpg"
+    ],
+    "inStock": true,
+    "stockCount": 12,
+    "badge": "25% OFF",
+    "featured": true,
+    "isBestSeller": true,
+    "specs": {
+      "Brand": "SOW In-House Custom (Direct Factory Craftsmanship)",
+      "Edition": "Pure White & Camouflage Print Series",
+      "MRP": "₹2,400 (Special 25% Off: ₹1,800)",
+      "Protection": "Articulated sausage & split foam combination with camo overlays",
+      "Palm": "High-grade sheep leather palm for soft touch and high durability",
+      "Ventilation": "Airflow gussets preventing sweat buildup during long innings",
+      "Cuff": "Ultra-soft cotton towel wristband with micro-velcro fastening"
+    },
+    "description": "SOW Custom In-House White Camo Batting Gloves. Combines a clean pure white profile with contemporary gold, grey, and black camouflage detailing on the finger bars. Engineered with multi-split finger articulation, heavy-impact foam cushioning, and ultra-comfortable sheep leather palm. Special 25% discount: ₹1,800 (MRP ₹2,400).",
+    "tags": [
+      "SOW Custom",
+      "Batting Gloves",
+      "White Camo",
+      "Split Finger",
+      "25% OFF",
+      "In-House"
     ]
   },
   {
@@ -370,8 +538,8 @@
     "id": "prod-008",
     "name": "SS Gladiator Pro Split-Finger Batting Gloves",
     "slug": "ss-gladiator-batting-gloves",
-    "category": "batting-gear",
-    "categoryName": "Batting Protection",
+    "category": "batting-gloves",
+    "categoryName": "Batting Gloves",
     "brand": "SS TON",
     "price": 5299,
     "originalPrice": 6500,

@@ -359,8 +359,14 @@
   function getFilteredProducts() {
     return state.products.filter(product => {
       // Category filter
-      if (state.activeCategory !== 'all' && product.category !== state.activeCategory) {
-        return false;
+      if (state.activeCategory !== 'all') {
+        if (state.activeCategory === 'batting-gear') {
+          if (product.category !== 'batting-gear' && product.category !== 'batting-gloves') {
+            return false;
+          }
+        } else if (product.category !== state.activeCategory) {
+          return false;
+        }
       }
       // Brand filter
       if (state.activeBrand !== 'all' && product.brand !== state.activeBrand) {

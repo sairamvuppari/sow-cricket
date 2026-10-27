@@ -5,7 +5,7 @@
     "slug": "all",
     "icon": "sparkles",
     "description": "Explore the complete collection of world-class authentic cricket gear.",
-    "count": 21,
+    "count": 25,
     "featured": true
   },
   {
@@ -14,18 +14,29 @@
     "slug": "bats",
     "icon": "shield",
     "description": "Handcrafted English Willow & Kashmir Willow bats with immense power and balance.",
-    "count": 8,
+    "count": 9,
     "badge": "Top Seller",
     "featured": true,
     "image": "images/bats/bat-willow.jpg"
+  },
+  {
+    "id": "batting-gloves",
+    "name": "Batting Gloves",
+    "slug": "batting-gloves",
+    "icon": "hand",
+    "description": "SOW Custom & match-grade split-finger batting gloves with high-density impact protection.",
+    "count": 4,
+    "badge": "25% OFF",
+    "featured": true,
+    "image": "images/batting-gloves/sow-batting-gloves-gold.jpg"
   },
   {
     "id": "batting-gear",
     "name": "Batting Protection",
     "slug": "batting-gear",
     "icon": "award",
-    "description": "High-density foam pads, split-finger shark-tooth gloves, and ergonomic guards.",
-    "count": 4,
+    "description": "High-density foam pads, ergonomic thigh combos, and protective chest guards.",
+    "count": 3,
     "badge": "Pro Choice",
     "featured": true,
     "image": "images/batting-pads/batting-gear.jpg"
