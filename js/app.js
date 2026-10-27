@@ -1,5 +1,5 @@
 /**
- * Crickstore - Main Application Logic
+ * SOW - Main Application Logic
  * Manages JSON / Array data loading, dynamic category switching,
  * real-time filtering, shopping cart, quick view, and interactive product addition.
  */
@@ -148,29 +148,29 @@
       if (catRes && catRes.ok && prodRes && prodRes.ok) {
         state.categories = await catRes.json();
         state.products = await prodRes.json();
-        state.reviews = revRes && revRes.ok ? await revRes.json() : (window.CRIC_REVIEWS || []);
-        state.deals = dealsRes && dealsRes.ok ? await dealsRes.json() : (window.CRIC_DEALS || []);
+        state.reviews = revRes && revRes.ok ? await revRes.json() : (window.SOW_REVIEWS || window.CRIC_REVIEWS || []);
+        state.deals = dealsRes && dealsRes.ok ? await dealsRes.json() : (window.SOW_DEALS || window.CRIC_DEALS || []);
         loadedFromJSON = true;
         state.dataSource = 'JSON Files (data/*.json)';
       }
     } catch (err) {
-      console.warn('Direct fetch from JSON failed (likely file:// protocol), using window.CRIC_* data arrays', err);
+      console.warn('Direct fetch from JSON failed (likely file:// protocol), using window.SOW_* data arrays', err);
     }
 
     if (!loadedFromJSON) {
       // Fallback seamlessly to JavaScript data arrays
-      state.categories = window.CRIC_CATEGORIES ? JSON.parse(JSON.stringify(window.CRIC_CATEGORIES)) : [];
-      state.products = window.CRIC_PRODUCTS ? JSON.parse(JSON.stringify(window.CRIC_PRODUCTS)) : [];
-      state.reviews = window.CRIC_REVIEWS ? JSON.parse(JSON.stringify(window.CRIC_REVIEWS)) : [];
-      state.deals = window.CRIC_DEALS ? JSON.parse(JSON.stringify(window.CRIC_DEALS)) : [];
-      state.dataSource = 'Direct Memory Data Arrays (window.CRIC_*)';
+      state.categories = (window.SOW_CATEGORIES || window.CRIC_CATEGORIES) ? JSON.parse(JSON.stringify(window.SOW_CATEGORIES || window.CRIC_CATEGORIES)) : [];
+      state.products = (window.SOW_PRODUCTS || window.CRIC_PRODUCTS) ? JSON.parse(JSON.stringify(window.SOW_PRODUCTS || window.CRIC_PRODUCTS)) : [];
+      state.reviews = (window.SOW_REVIEWS || window.CRIC_REVIEWS) ? JSON.parse(JSON.stringify(window.SOW_REVIEWS || window.CRIC_REVIEWS)) : [];
+      state.deals = (window.SOW_DEALS || window.CRIC_DEALS) ? JSON.parse(JSON.stringify(window.SOW_DEALS || window.CRIC_DEALS)) : [];
+      state.dataSource = 'Direct Memory Data Arrays (window.SOW_*)';
     }
 
     // Load persisted cart and wishlist from localStorage if available
     try {
-      const savedCart = localStorage.getItem('cric_cart');
+      const savedCart = localStorage.getItem('sow_cart') || localStorage.getItem('cric_cart');
       if (savedCart) state.cart = JSON.parse(savedCart);
-      const savedWishlist = localStorage.getItem('cric_wishlist');
+      const savedWishlist = localStorage.getItem('sow_wishlist') || localStorage.getItem('cric_wishlist');
       if (savedWishlist) state.wishlist = new Set(JSON.parse(savedWishlist));
     } catch (e) {
       console.warn('LocalStorage error', e);
@@ -498,7 +498,7 @@
             <div>
               <!-- Brand & Stock -->
               <div class="flex items-center justify-between text-xs mb-1.5">
-                <span class="font-bold text-[#d03523] uppercase tracking-wider">${prod.brand || 'Crickstore'}</span>
+                <span class="font-bold text-[#d03523] uppercase tracking-wider">${prod.brand || 'SOW'}</span>
                 <span class="flex items-center gap-1 text-[11px] font-medium ${prod.inStock ? 'text-emerald-700' : 'text-slate-400'}">
                   <span class="w-1.5 h-1.5 rounded-full ${prod.inStock ? 'bg-emerald-500' : 'bg-slate-400'}"></span>
                   ${prod.inStock ? 'In Stock' : 'Out of Stock'}
@@ -657,7 +657,7 @@
 
   function persistCart() {
     try {
-      localStorage.setItem('cric_cart', JSON.stringify(state.cart));
+      localStorage.setItem('sow_cart', JSON.stringify(state.cart));
     } catch (e) {
       console.warn('LocalStorage error saving cart', e);
     }
@@ -675,7 +675,7 @@
       showToast('Added to your Wishlist!');
     }
     try {
-      localStorage.setItem('cric_wishlist', JSON.stringify([...state.wishlist]));
+      localStorage.setItem('sow_wishlist', JSON.stringify([...state.wishlist]));
     } catch (e) {}
     updateWishlistUI();
     renderProducts();
@@ -838,7 +838,7 @@
         <div class="flex flex-col justify-between">
           <div>
             <div class="flex items-center justify-between text-xs mb-2">
-              <span class="font-bold text-[#d03523] uppercase tracking-wider">${product.brand || 'Crickstore Gear'}</span>
+              <span class="font-bold text-[#d03523] uppercase tracking-wider">${product.brand || 'SOW Gear'}</span>
               <span class="px-2.5 py-0.5 rounded-full text-xs font-semibold ${product.inStock ? 'bg-emerald-50 text-emerald-700' : 'bg-red-50 text-red-700'}">
                 ${product.inStock ? `In Stock (${product.stockCount || 5} units left)` : 'Out of Stock'}
               </span>
@@ -1003,7 +1003,7 @@
     const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(state.products, null, 2));
     const downloadAnchor = document.createElement('a');
     downloadAnchor.setAttribute("href", dataStr);
-    downloadAnchor.setAttribute("download", "crickstore-products-updated.json");
+    downloadAnchor.setAttribute("download", "sow-products-updated.json");
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();
@@ -1011,7 +1011,7 @@
   }
 
   /**
-   * Render Customer Reviews Section (Judge.me inspired from Crickstore)
+   * Render Customer Reviews Section (SOW)
    */
   function renderReviews() {
     if (!elements.reviewsContainer) return;
@@ -1299,7 +1299,7 @@
   }
 
   // Expose global controller for inline onclick actions
-  window.cricStore = {
+  window.sowStore = window.cricStore = {
     addToCart,
     removeFromCart,
     updateCartQuantity,

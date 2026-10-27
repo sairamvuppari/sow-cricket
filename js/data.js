@@ -1,9 +1,9 @@
 /**
- * CricStore Equipment Data Source
+ * SOW Cricket Equipment Data Source
  * Provides primary arrays and serves as fallback if fetch() is restricted on file:// URLs
  */
 
-window.CRIC_CATEGORIES = [
+window.SOW_CATEGORIES = window.CRIC_CATEGORIES = [
   {
     "id": "all",
     "name": "All Equipment",
@@ -92,7 +92,7 @@ window.CRIC_CATEGORIES = [
   }
 ];
 
-window.CRIC_PRODUCTS = [
+window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
   {
     "id": "prod-001",
     "name": "SS Ton Reserve Edition English Willow Cricket Bat",
@@ -600,7 +600,7 @@ window.CRIC_PRODUCTS = [
   }
 ];
 
-window.CRIC_REVIEWS = [
+window.SOW_REVIEWS = window.CRIC_REVIEWS = [
   {
     "id": "rev-1",
     "name": "Vikramaditya R.",
@@ -609,7 +609,7 @@ window.CRIC_REVIEWS = [
     "location": "Mumbai, India",
     "rating": 5,
     "title": "Monster Ping on the SS Reserve Edition!",
-    "comment": "I ordered the SS Ton Reserve Edition with their custom knocking-in service. The bat arrived oiled, taped, and pinging like a cannon right out of the box. Hit 87 runs in my first club match with it. Crickstore's packing was immaculate!",
+    "comment": "I ordered the SS Ton Reserve Edition with their custom knocking-in service. The bat arrived oiled, taped, and pinging like a cannon right out of the box. Hit 87 runs in my first club match with it. SOW's packing was immaculate!",
     "product": "SS Ton Reserve Edition English Willow Cricket Bat",
     "verified": true,
     "date": "2 days ago"
@@ -655,7 +655,7 @@ window.CRIC_REVIEWS = [
   }
 ];
 
-window.CRIC_DEALS = [
+window.SOW_DEALS = window.CRIC_DEALS = [
   {
     "id": "deal-1",
     "title": "Season Opener Willow Package",
