@@ -1,0 +1,22 @@
+[
+  {
+    "id": "deal-1",
+    "title": "Season Opener Willow Package",
+    "tagline": "Save ₹12,000 on Grade 1 Willow Bats",
+    "description": "Get complimentary machine knocking (15,000 strikes), toe-guard fitting, and laser name engraving with any SS or Gray-Nicolls bat purchase.",
+    "code": "WILLOW2026",
+    "discount": "Extra 12% OFF",
+    "expiryHours": 28,
+    "badge": "Hot Flash Deal"
+  },
+  {
+    "id": "deal-2",
+    "title": "Complete Pro Protection Bundle",
+    "tagline": "Buy Pads + Gloves, Get Thigh Guard Free",
+    "description": "Bundle Kookaburra Carbon Pro pads and SS Gladiator gloves together to receive an SG Test combo thigh guard free of charge.",
+    "code": "SAFEPRO",
+    "discount": "Free ₹3,499 Gift",
+    "expiryHours": 42,
+    "badge": "Bundle Offer"
+  }
+]

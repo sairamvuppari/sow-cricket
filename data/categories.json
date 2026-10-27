@@ -1,0 +1,88 @@
+[
+  {
+    "id": "all",
+    "name": "All Equipment",
+    "slug": "all",
+    "icon": "sparkles",
+    "description": "Explore the complete collection of world-class authentic cricket gear.",
+    "count": 18,
+    "featured": true
+  },
+  {
+    "id": "bats",
+    "name": "Cricket Bats",
+    "slug": "bats",
+    "icon": "shield",
+    "description": "Handcrafted English Willow & Kashmir Willow bats with immense power and balance.",
+    "count": 6,
+    "badge": "Top Seller",
+    "featured": true,
+    "image": "images/bat-willow.jpg"
+  },
+  {
+    "id": "batting-gear",
+    "name": "Batting Protection",
+    "slug": "batting-gear",
+    "icon": "award",
+    "description": "High-density foam pads, split-finger shark-tooth gloves, and ergonomic guards.",
+    "count": 4,
+    "badge": "Pro Choice",
+    "featured": true,
+    "image": "images/batting-gear.jpg"
+  },
+  {
+    "id": "helmets",
+    "name": "Helmets & Safety",
+    "slug": "helmets",
+    "icon": "hard-hat",
+    "description": "Titanium and steel grille helmets certified to BS 7928:2013 safety standards.",
+    "count": 2,
+    "badge": "Certified",
+    "featured": true,
+    "image": "images/helmet.jpg"
+  },
+  {
+    "id": "wicket-keeping",
+    "name": "Wicket Keeping",
+    "slug": "wicket-keeping",
+    "icon": "hand",
+    "description": "Aniline leather keeping gloves, octopus rubber grips, and lightweight legguards.",
+    "count": 2,
+    "badge": "Elite",
+    "featured": false,
+    "image": "images/batting-gear.jpg"
+  },
+  {
+    "id": "balls",
+    "name": "Cricket Balls",
+    "slug": "balls",
+    "icon": "circle-dot",
+    "description": "Four-piece alum tanned leather balls for Test, One Day, and T20 Day/Night matches.",
+    "count": 2,
+    "badge": "Match Grade",
+    "featured": true,
+    "image": "images/cricket-balls.jpg"
+  },
+  {
+    "id": "kitbags",
+    "name": "Kit Bags & Luggage",
+    "slug": "kitbags",
+    "icon": "briefcase",
+    "description": "Heavy-duty 1680D nylon wheelie and duffle bags with padded bat caves.",
+    "count": 2,
+    "badge": "Spacious",
+    "featured": true,
+    "image": "images/kitbag.jpg"
+  },
+  {
+    "id": "accessories",
+    "name": "Accessories & Care",
+    "slug": "accessories",
+    "icon": "wrench",
+    "description": "Raw linseed oil, wooden knocking mallets, anti-scuff sheets, and chevron grips.",
+    "count": 2,
+    "badge": "Care Essentials",
+    "featured": false,
+    "image": "images/bat-willow.jpg"
+  }
+]

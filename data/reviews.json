@@ -1,0 +1,54 @@
+[
+  {
+    "id": "rev-1",
+    "name": "Vikramaditya R.",
+    "role": "Premier League Batsman",
+    "avatar": "VR",
+    "location": "Mumbai, India",
+    "rating": 5,
+    "title": "Monster Ping on the SS Reserve Edition!",
+    "comment": "I ordered the SS Ton Reserve Edition with their custom knocking-in service. The bat arrived oiled, taped, and pinging like a cannon right out of the box. Hit 87 runs in my first club match with it. Crickstore's packing was immaculate!",
+    "product": "SS Ton Reserve Edition English Willow Cricket Bat",
+    "verified": true,
+    "date": "2 days ago"
+  },
+  {
+    "id": "rev-2",
+    "name": "Marcus Thornton",
+    "role": "Club Captain",
+    "avatar": "MT",
+    "location": "Surrey, United Kingdom",
+    "rating": 5,
+    "title": "Fast international delivery to the UK",
+    "comment": "Shipped DHL express to London in under 4 business days. Genuine Grade 1 willow with 11 equidistant grains. Exactly as weighed in their WhatsApp video consultation.",
+    "product": "Gray-Nicolls Shockwave 2.1 500 Bat",
+    "verified": true,
+    "date": "1 week ago"
+  },
+  {
+    "id": "rev-3",
+    "name": "Aman Deep S.",
+    "role": "State Wicketkeeper",
+    "avatar": "AD",
+    "location": "Punjab, India",
+    "rating": 5,
+    "title": "Masuri Titanium is feather-light and rock-solid",
+    "comment": "You can barely feel the weight of this helmet on your neck, yet the titanium eye-line grille gives 100% confidence facing 140km/h pacers. Worth every single penny for safety.",
+    "product": "Masuri Vision Series Pro Titanium Cricket Helmet",
+    "verified": true,
+    "date": "2 weeks ago"
+  },
+  {
+    "id": "rev-4",
+    "name": "Rohan Patel",
+    "role": "All-Rounder",
+    "avatar": "RP",
+    "location": "Melbourne, Australia",
+    "rating": 5,
+    "title": "Kookaburra balls hold their seam forever",
+    "comment": "Box of 6 pink Kahuna balls arrived in top-grade condition. The seam remains elevated even after 40 overs of hard bowling on synthetic and turf. Outstanding quality.",
+    "product": "Kookaburra Kahuna 4-Piece Leather Ball",
+    "verified": true,
+    "date": "3 weeks ago"
+  }
+]
