@@ -1,5 +1,39 @@
 [
   {
+    "id": "prod-000-gnx",
+    "name": "Gray-Nicolls GNX 400 Ventus English Willow Cricket Bat",
+    "slug": "gray-nicolls-gnx-400-ventus-bat",
+    "category": "bats",
+    "categoryName": "Cricket Bats",
+    "brand": "Gray-Nicolls",
+    "price": 12750,
+    "originalPrice": 16999,
+    "discountPercent": 25,
+    "rating": 5.0,
+    "reviewCount": 34,
+    "image": "images/gnx-400-ventus.jpg",
+    "gallery": [
+      "images/gnx-400-ventus.jpg",
+      "images/gnx-400-ventus-label.jpg"
+    ],
+    "inStock": true,
+    "stockCount": 8,
+    "badge": "25% OFF",
+    "featured": true,
+    "isBestSeller": true,
+    "specs": {
+      "Willow": "Authentic Hand-Selected English Willow",
+      "Model": "GNX 400 Ventus (Series 1.0)",
+      "Size": "SH - Short Handle (Length 85 cm)",
+      "MRP": "₹16,999 (Special 25% Off: ₹12,750)",
+      "Grip": "Red Textured Traction Hex-Grip",
+      "Profile": "Aggressive mid-to-low sweet spot with prominent power edges",
+      "Batch": "April 2026 Genuine Match Stock"
+    },
+    "description": "Genuine Gray-Nicolls GNX 400 Ventus English Willow Cricket Bat in Short Handle (85 cm length). Features the iconic red checkered retro styling, premium English willow cleft, massive ping, and balanced featherweight pickup. 100% authentic with factory barcode & MRP label (MRP ₹16,999 with exclusive 25% discount at ₹12,750).",
+    "tags": ["Gray-Nicolls", "GNX 400 Ventus", "English Willow", "25% OFF", "SH Size 85cm"]
+  },
+  {
     "id": "prod-001",
     "name": "SS Ton Reserve Edition English Willow Cricket Bat",
     "slug": "ss-ton-reserve-edition-bat",

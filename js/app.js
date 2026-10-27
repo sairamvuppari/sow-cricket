@@ -475,7 +475,7 @@
             <img 
               src="${prod.image}" 
               alt="${prod.name}" 
-              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" 
+              class="w-full h-full ${prod.category === 'bats' ? 'object-contain p-2.5' : 'object-cover'} group-hover:scale-105 transition-transform duration-500" 
               loading="lazy"
             />
             <!-- Quick View Overlay Button -->
@@ -781,26 +781,35 @@
         `).join('')
       : '<tr><td colspan="2" class="text-xs text-slate-400 py-2">Standard ICC & MCC certified match specifications.</td></tr>';
 
+    const galleryImages = (product.gallery && product.gallery.length > 0)
+      ? product.gallery
+      : [product.image];
+
     elements.quickViewContent.innerHTML = `
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
         <!-- Media Gallery -->
         <div class="flex flex-col gap-3">
-          <div class="h-80 w-full rounded-2xl bg-slate-50 border border-slate-200 overflow-hidden relative">
-            <img src="${product.image}" alt="${product.name}" class="w-full h-full object-cover" />
+          <div class="h-80 sm:h-96 w-full rounded-2xl bg-white border border-slate-200 overflow-hidden relative flex items-center justify-center p-3 shadow-inner">
+            <img id="quickview-main-img" src="${product.image}" alt="${product.name}" class="w-full h-full object-contain" />
             ${product.badge ? `
               <span class="absolute top-3 left-3 bg-[#d03523] text-white text-xs font-bold px-3 py-1 rounded-full shadow">
                 ${product.badge}
               </span>
             ` : ''}
           </div>
-          <div class="flex gap-2">
-            <div class="w-16 h-16 rounded-xl border-2 border-[#002d57] overflow-hidden bg-slate-100">
-              <img src="${product.image}" class="w-full h-full object-cover" />
+          ${galleryImages.length > 1 ? `
+            <div class="flex items-center gap-2">
+              ${galleryImages.map((img, idx) => `
+                <button 
+                  type="button"
+                  onclick="document.getElementById('quickview-main-img').src='${img}'"
+                  class="w-16 h-16 rounded-xl border-2 border-slate-200 hover:border-[#002d57] overflow-hidden bg-white focus:border-[#002d57] transition-all p-1 flex items-center justify-center cursor-pointer shadow-xs"
+                  title="View Image ${idx + 1}">
+                  <img src="${img}" class="w-full h-full object-contain" />
+                </button>
+              `).join('')}
             </div>
-            <div class="w-16 h-16 rounded-xl border border-slate-200 overflow-hidden bg-slate-100 opacity-60">
-              <img src="images/batting-gear.jpg" class="w-full h-full object-cover" />
-            </div>
-          </div>
+          ` : ''}
         </div>
 
         <!-- Specifications & Buy -->
