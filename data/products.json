@@ -34,6 +34,41 @@
     "tags": ["Gray-Nicolls", "GNX 400 Ventus", "English Willow", "25% OFF", "SH Size 85cm"]
   },
   {
+    "id": "prod-000-sg-slammer",
+    "name": "SG Slammer Classic English Willow Cricket Bat",
+    "slug": "sg-slammer-classic-bat",
+    "category": "bats",
+    "categoryName": "Cricket Bats",
+    "brand": "SG",
+    "price": 14040,
+    "originalPrice": 18000,
+    "discountPercent": 22,
+    "rating": 5.0,
+    "reviewCount": 26,
+    "image": "images/sg-slammer-classic-front.jpg",
+    "gallery": [
+      "images/sg-slammer-classic-front.jpg",
+      "images/sg-slammer-classic-back.jpg",
+      "images/sg-slammer-classic-label.jpg"
+    ],
+    "inStock": true,
+    "stockCount": 7,
+    "badge": "22% OFF",
+    "featured": true,
+    "isBestSeller": true,
+    "specs": {
+      "Willow": "Handcrafted English Willow (May 2026 Batch)",
+      "Model": "SG Slammer Classic (Sunil Gavaskar Autograph)",
+      "Weight": "2.9 (approx. 2 lb 9 oz / 1165g)",
+      "Size / Length": "SH - Short Handle (Length 85 cm)",
+      "MRP": "₹18,000 (Special 22% Off: ₹14,040)",
+      "Grip": "White Ripple Cushion Chevron Grip",
+      "Verification": "Tamper-Evident Hologram, SG01CR130133 Barcode & QR Code"
+    },
+    "description": "Authentic SG Slammer Classic English Willow Cricket Bat (Autograph Sunil Gavaskar edition). Handcrafted from selected English willow featuring a 2.9 (1165g) featherlight pickup, massive sweet spot, full spine profile, and royal purple & gold Sanspareils Greenlands decals. 100% genuine with official factory hologram, barcode SG01CR130133, and scratch QR code. MRP ₹18,000 discounted by 22% to ₹14,040.",
+    "tags": ["SG", "Slammer Classic", "Sunil Gavaskar", "English Willow", "22% OFF", "SH Size 85cm"]
+  },
+  {
     "id": "prod-001",
     "name": "SS Ton Reserve Edition English Willow Cricket Bat",
     "slug": "ss-ton-reserve-edition-bat",
