@@ -10,7 +10,7 @@ window.SOW_CATEGORIES = window.CRIC_CATEGORIES = [
     "slug": "all",
     "icon": "sparkles",
     "description": "Explore the complete collection of world-class authentic cricket gear.",
-    "count": 26,
+    "count": 27,
     "featured": true
   },
   {
@@ -19,7 +19,7 @@ window.SOW_CATEGORIES = window.CRIC_CATEGORIES = [
     "slug": "bats",
     "icon": "shield",
     "description": "Handcrafted English Willow & Kashmir Willow bats with immense power and balance.",
-    "count": 10,
+    "count": 11,
     "badge": "Top Seller",
     "featured": true,
     "image": "images/bats/bat-willow.jpg"
@@ -183,6 +183,49 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Sunil Gavaskar",
       "English Willow",
       "22% OFF",
+      "SH Size 85cm"
+    ]
+  },
+  {
+    "id": "prod-000-sg-klr-classic",
+    "name": "SG KLR Classic English Willow Cricket Bat",
+    "slug": "sg-klr-classic-bat",
+    "category": "bats",
+    "categoryName": "Cricket Bats",
+    "brand": "SG",
+    "price": 13500,
+    "originalPrice": 18000,
+    "discountPercent": 25,
+    "rating": 5.0,
+    "reviewCount": 24,
+    "image": "images/bats/sg-klr-classic-front.jpg",
+    "gallery": [
+      "images/bats/sg-klr-classic-front.jpg",
+      "images/bats/sg-klr-classic-back.jpg",
+      "images/bats/sg-klr-classic-label.jpg"
+    ],
+    "inStock": true,
+    "stockCount": 7,
+    "badge": "25% OFF",
+    "featured": true,
+    "isBestSeller": true,
+    "specs": {
+      "Willow": "Handcrafted English Willow (April 2026 Batch)",
+      "Model": "SG KLR Classic (KL Rahul Autograph / Red Dragon Edition)",
+      "Weight": "2.9 (1173g dead weight / feather pickup)",
+      "Size / Length": "SH - Short Handle (Length 85 cm)",
+      "MRP": "₹18,000 / Tag ₹17,999 (Special 25% Off: ₹13,500)",
+      "Grip": "White Ripple Chevron Grip with Black Accent Rings",
+      "Back Styling": "Embossed Navy SG Shield + Red 'BELIEVE. BECOME.' Decals",
+      "Verification": "Sanspareils Greenlands Hologram, Barcode SG01CR130415 & QR Code"
+    },
+    "description": "Authentic SG KLR Classic English Willow Cricket Bat (KL Rahul Autograph Edition). Handcrafted by Sanspareils Greenlands from selected English willow cleft with 1173g pickup (2.9 scale), full spine power profile, and explosive ping. Features navy & chrome SG decals, red dragon insignia, and bold 'BELIEVE. BECOME.' back styling. 100% genuine with factory barcode SG01CR130415, hologram, and scratch QR code. MRP ₹18,000 discounted by 25% to ₹13,500.",
+    "tags": [
+      "SG",
+      "KLR Classic",
+      "KL Rahul",
+      "English Willow",
+      "25% OFF",
       "SH Size 85cm"
     ]
   },
