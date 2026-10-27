@@ -49,7 +49,7 @@
     inStockFilter: document.getElementById('instock-filter'),
     resetFiltersBtn: document.getElementById('reset-filters-btn'),
     currencySelect: document.getElementById('currency-select'),
-    
+
     // Cart Elements
     cartBtn: document.getElementById('cart-btn'),
     cartDrawer: document.getElementById('cart-drawer'),
@@ -76,7 +76,7 @@
     quickViewModal: document.getElementById('quick-view-modal'),
     quickViewClose: document.getElementById('quick-view-close'),
     quickViewContent: document.getElementById('quick-view-content'),
-    
+
     addProductModal: document.getElementById('add-product-modal'),
     openAddProductBtn: document.getElementById('open-add-product-btn'),
     closeAddProductBtn: document.getElementById('close-add-product-btn'),
@@ -117,7 +117,7 @@
   function showToast(message, type = 'success') {
     if (!elements.toastNotification) return;
     elements.toastMessage.textContent = message;
-    
+
     // Adjust colors based on type
     if (type === 'error') {
       elements.toastNotification.className = 'fixed bottom-6 right-6 z-50 flex items-center gap-3 bg-red-600 text-white px-5 py-3.5 rounded-xl shadow-2xl transition-all duration-300 transform translate-y-0 opacity-100';
@@ -177,14 +177,14 @@
     }
 
     // Render Data Source Badge
-    if (elements.dataSourceBadge) {
-      elements.dataSourceBadge.innerHTML = `
-        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
-          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-          Data Loaded via: ${state.dataSource}
-        </span>
-      `;
-    }
+    // if (elements.dataSourceBadge) {
+    //   elements.dataSourceBadge.innerHTML = `
+    //     <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold bg-emerald-50 text-emerald-700 border border-emerald-200">
+    //       <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+    //       Data Loaded via: ${state.dataSource}
+    //     </span>
+    //   `;
+    // }
 
     // Populate Category Dropdowns
     populateCategoryDropdown();
@@ -219,18 +219,17 @@
 
     elements.categoryTabs.innerHTML = state.categories.map(cat => {
       const isActive = state.activeCategory === cat.id;
-      const count = cat.id === 'all' 
-        ? state.products.length 
+      const count = cat.id === 'all'
+        ? state.products.length
         : state.products.filter(p => p.category === cat.id).length;
 
       return `
         <button 
           data-category="${cat.id}"
-          class="category-pill flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap ${
-            isActive 
-              ? 'bg-[#002d57] text-white shadow-md' 
-              : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/80 shadow-sm'
-          }">
+          class="category-pill flex items-center gap-2 px-4 py-2.5 rounded-full text-sm font-medium transition-all duration-200 whitespace-nowrap ${isActive
+          ? 'bg-[#002d57] text-white shadow-md'
+          : 'bg-white text-slate-700 hover:bg-slate-100 border border-slate-200/80 shadow-sm'
+        }">
           <span>${cat.name}</span>
           <span class="text-xs px-2 py-0.5 rounded-full ${isActive ? 'bg-white/20 text-white' : 'bg-slate-100 text-slate-600'}">
             ${count}
@@ -336,11 +335,10 @@
       return `
         <button 
           data-brand="${brand}"
-          class="px-3 py-1.5 text-xs font-semibold rounded-lg border transition-all ${
-            isSelected 
-              ? 'bg-[#002d57] text-white border-[#002d57]' 
-              : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300'
-          }">
+          class="px-3 py-1.5 text-xs font-semibold rounded-lg border transition-all ${isSelected
+          ? 'bg-[#002d57] text-white border-[#002d57]'
+          : 'bg-white text-slate-700 border-slate-200 hover:border-slate-300'
+        }">
           ${label}
         </button>
       `;
@@ -438,7 +436,7 @@
 
     elements.productsGrid.innerHTML = filtered.map(prod => {
       const isWishlisted = state.wishlist.has(prod.id);
-      const discount = prod.originalPrice && prod.originalPrice > prod.price 
+      const discount = prod.originalPrice && prod.originalPrice > prod.price
         ? Math.round(((prod.originalPrice - prod.price) / prod.originalPrice) * 100)
         : null;
 
@@ -463,9 +461,8 @@
             </div>
             <button 
               data-wishlist-id="${prod.id}"
-              class="pointer-events-auto w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm shadow flex items-center justify-center text-slate-400 hover:text-red-500 transition-colors ${
-                isWishlisted ? 'text-red-500' : ''
-              }" 
+              class="pointer-events-auto w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm shadow flex items-center justify-center text-slate-400 hover:text-red-500 transition-colors ${isWishlisted ? 'text-red-500' : ''
+        }" 
               title="Add to Wishlist">
               <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
                 <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
@@ -550,20 +547,18 @@
                 <span class="text-[10px] text-slate-500">Includes all taxes</span>
               </div>
 
-              <!-- Add to Cart Button -->
-              <button 
-                data-cart-id="${prod.id}"
-                ${!prod.inStock ? 'disabled' : ''}
-                class="px-4 py-2 rounded-xl text-xs font-bold transition-all duration-200 flex items-center gap-1.5 shadow-sm ${
-                  prod.inStock 
-                    ? 'bg-[#d03523] hover:bg-[#b52c1c] text-white active:scale-95' 
-                    : 'bg-slate-200 text-slate-400 cursor-not-allowed'
-                }">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+              <!-- WhatsApp Direct Order Button -->
+              <a 
+                href="https://wa.me/919441229261?text=${encodeURIComponent('Hi SOW Cricket, I want to order: ' + prod.name + ' (' + formatPrice(prod.price) + ')')}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="px-3.5 py-2 rounded-xl text-xs font-bold transition-all duration-200 flex items-center gap-1.5 shadow-sm bg-emerald-600 hover:bg-emerald-700 text-white active:scale-95"
+                title="Order via WhatsApp">
+                <svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
+                  <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.03C9.36 7.03 9.09 7.09 8.87 7.33C8.65 7.57 8.02 8.16 8.02 9.36C8.02 10.56 8.9 11.72 9.02 11.89C9.15 12.05 10.74 14.5 13.18 15.56C13.76 15.81 14.21 15.96 14.57 16.07C15.16 16.26 15.69 16.23 16.12 16.17C16.6 16.1 17.59 15.57 17.8 14.99C18 14.41 18 13.91 17.94 13.81C17.88 13.7 17.72 13.64 17.47 13.51C17.22 13.39 16 12.79 15.77 12.71C15.55 12.62 15.39 12.58 15.22 12.82C15.06 13.07 14.58 13.64 14.44 13.81C14.3 13.97 14.16 13.99 13.91 13.87C13.66 13.74 12.87 13.48 11.93 12.65C11.2 12 10.71 11.19 10.56 10.95C10.42 10.7 10.55 10.57 10.67 10.45C10.78 10.34 10.92 10.15 11.05 10.01C11.17 9.86 11.21 9.76 11.29 9.59C11.37 9.43 11.33 9.28 11.27 9.16C11.21 9.04 10.71 7.82 10.5 7.31C10.3 6.81 10.1 6.88 9.94 6.87C9.8 6.87 9.67 6.87 9.53 7.03Z"/>
                 </svg>
-                Add
-              </button>
+                WhatsApp
+              </a>
             </div>
           </div>
         </div>
@@ -578,14 +573,6 @@
    * Product Card Actions Listeners
    */
   function attachProductCardListeners() {
-    // Add to Cart
-    elements.productsGrid.querySelectorAll('[data-cart-id]').forEach(btn => {
-      btn.addEventListener('click', (e) => {
-        e.stopPropagation();
-        const id = btn.getAttribute('data-cart-id');
-        addToCart(id);
-      });
-    });
 
     // Wishlist Toggle
     elements.productsGrid.querySelectorAll('[data-wishlist-id]').forEach(btn => {
@@ -607,32 +594,14 @@
   }
 
   /**
-   * Cart Operations
+   * Order via WhatsApp (Direct Order Workflow)
    */
   function addToCart(productId, quantity = 1) {
     const product = state.products.find(p => p.id === productId);
     if (!product) return;
 
-    const existingIndex = state.cart.findIndex(item => item.id === productId);
-
-    if (existingIndex > -1) {
-      state.cart[existingIndex].quantity += quantity;
-    } else {
-      state.cart.push({
-        id: product.id,
-        name: product.name,
-        brand: product.brand,
-        price: product.price,
-        image: product.image,
-        category: product.category,
-        quantity: quantity
-      });
-    }
-
-    persistCart();
-    updateCartUI();
-    showToast(`Added "${product.name.slice(0, 28)}..." to your cart!`);
-    openCartDrawer();
+    const msg = encodeURIComponent(`Hi SOW Cricket, I would like to order/inquire about: ${product.name} (${formatPrice(product.price)})`);
+    window.open(`https://wa.me/919441229261?text=${msg}`, '_blank');
   }
 
   function updateCartQuantity(productId, newQty) {
@@ -676,7 +645,7 @@
     }
     try {
       localStorage.setItem('sow_wishlist', JSON.stringify([...state.wishlist]));
-    } catch (e) {}
+    } catch (e) { }
     updateWishlistUI();
     renderProducts();
   }
@@ -803,7 +772,7 @@
     const product = state.products.find(p => p.id === productId);
     if (!product || !elements.quickViewModal || !elements.quickViewContent) return;
 
-    const specsRows = product.specs 
+    const specsRows = product.specs
       ? Object.entries(product.specs).map(([k, v]) => `
           <tr class="border-b border-slate-100">
             <td class="py-2 text-xs font-semibold text-slate-500">${k}</td>
@@ -880,16 +849,16 @@
           </div>
 
           <div class="pt-4 border-t border-slate-200 flex items-center gap-3">
-            <button 
-              onclick="window.cricStore.addToCart('${product.id}', 1); window.cricStore.closeQuickView();"
-              ${!product.inStock ? 'disabled' : ''}
-              class="flex-1 py-3 px-6 rounded-xl font-heading font-bold text-sm text-white shadow-lg transition-all ${
-                product.inStock 
-                  ? 'bg-[#d03523] hover:bg-[#b52c1c] active:scale-98 shadow-red-500/20' 
-                  : 'bg-slate-300 cursor-not-allowed'
-              }">
-              Add to Shopping Cart
-            </button>
+            <a 
+              href="https://wa.me/919441229261?text=${encodeURIComponent('Hi SOW Cricket, I would like to order/inquire about: ' + product.name + ' (' + formatPrice(product.price) + ')')}"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="flex-1 py-3.5 px-6 rounded-xl font-heading font-bold text-sm text-white shadow-lg bg-emerald-600 hover:bg-emerald-700 active:scale-98 transition-all flex items-center justify-center gap-2">
+              <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24">
+                <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 14.99 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.53 7.03C9.36 7.03 9.09 7.09 8.87 7.33C8.65 7.57 8.02 8.16 8.02 9.36C8.02 10.56 8.9 11.72 9.02 11.89C9.15 12.05 10.74 14.5 13.18 15.56C13.76 15.81 14.21 15.96 14.57 16.07C15.16 16.26 15.69 16.23 16.12 16.17C16.6 16.1 17.59 15.57 17.8 14.99C18 14.41 18 13.91 17.94 13.81C17.88 13.7 17.72 13.64 17.47 13.51C17.22 13.39 16 12.79 15.77 12.71C15.55 12.62 15.39 12.58 15.22 12.82C15.06 13.07 14.58 13.64 14.44 13.81C14.3 13.97 14.16 13.99 13.91 13.87C13.66 13.74 12.87 13.48 11.93 12.65C11.2 12 10.71 11.19 10.56 10.95C10.42 10.7 10.55 10.57 10.67 10.45C10.78 10.34 10.92 10.15 11.05 10.01C11.17 9.86 11.21 9.76 11.29 9.59C11.37 9.43 11.33 9.28 11.27 9.16C11.21 9.04 10.71 7.82 10.5 7.31C10.3 6.81 10.1 6.88 9.94 6.87C9.8 6.87 9.67 6.87 9.53 7.03Z"/>
+              </svg>
+              Order via WhatsApp
+            </a>
             <button 
               onclick="window.cricStore.toggleWishlist('${product.id}')"
               class="p-3 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 transition-colors" title="Wishlist">
@@ -977,7 +946,7 @@
     renderCategoryTabs();
     renderCategoryGrid();
     renderBrandFilters();
-    
+
     // Switch to category to immediately see new item
     setCategory(category);
 
@@ -1082,7 +1051,7 @@
           <button 
             onclick="window.cricStore.applyDealCode('${deal.code}')"
             class="px-5 py-2.5 rounded-xl bg-white hover:bg-slate-100 text-[#002d57] text-xs font-bold shadow-lg transition-transform active:scale-95">
-            Apply Deal
+            Claim on WhatsApp
           </button>
         </div>
 
@@ -1146,7 +1115,7 @@
     // Simulate order placement
     elements.checkoutForm.classList.add('hidden');
     elements.orderSuccessView.classList.remove('hidden');
-    
+
     // Clear Cart
     state.cart = [];
     persistCart();
@@ -1309,11 +1278,8 @@
     setCategory,
     openAddProductModal,
     applyDealCode: (code) => {
-      openCartDrawer();
-      if (elements.promoInput) {
-        elements.promoInput.value = code;
-        if (elements.applyPromoBtn) elements.applyPromoBtn.click();
-      }
+      const msg = encodeURIComponent(`Hi SOW Cricket, I would like to inquire about promo deal: ${code}`);
+      window.open(`https://wa.me/919441229261?text=${msg}`, '_blank');
     }
   };
 
