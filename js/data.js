@@ -8,38 +8,38 @@ window.SOW_CATEGORIES = window.CRIC_CATEGORIES = [
     "id": "all",
     "name": "All Equipment",
     "slug": "all",
-    "icon": "fa-th-large",
+    "icon": "sparkles",
     "description": "Explore the complete collection of world-class authentic cricket gear.",
-    "count": 18,
+    "count": 21,
     "featured": true
   },
   {
     "id": "bats",
     "name": "Cricket Bats",
     "slug": "bats",
-    "icon": "fa-baseball-bat-ball",
+    "icon": "shield",
     "description": "Handcrafted English Willow & Kashmir Willow bats with immense power and balance.",
-    "count": 6,
+    "count": 8,
     "badge": "Top Seller",
     "featured": true,
-    "image": "images/bat-willow.jpg"
+    "image": "images/bats/bat-willow.jpg"
   },
   {
     "id": "batting-gear",
     "name": "Batting Protection",
     "slug": "batting-gear",
-    "icon": "fa-shield-halved",
+    "icon": "award",
     "description": "High-density foam pads, split-finger shark-tooth gloves, and ergonomic guards.",
     "count": 4,
     "badge": "Pro Choice",
     "featured": true,
-    "image": "images/batting-gear.jpg"
+    "image": "images/batting-pads/batting-gear.jpg"
   },
   {
     "id": "helmets",
     "name": "Helmets & Safety",
     "slug": "helmets",
-    "icon": "fa-hard-hat",
+    "icon": "hard-hat",
     "description": "Titanium and steel grille helmets certified to BS 7928:2013 safety standards.",
     "count": 2,
     "badge": "Certified",
@@ -50,29 +50,29 @@ window.SOW_CATEGORIES = window.CRIC_CATEGORIES = [
     "id": "wicket-keeping",
     "name": "Wicket Keeping",
     "slug": "wicket-keeping",
-    "icon": "fa-hands",
+    "icon": "hand",
     "description": "Aniline leather keeping gloves, octopus rubber grips, and lightweight legguards.",
-    "count": 1,
+    "count": 2,
     "badge": "Elite",
     "featured": false,
-    "image": "images/batting-gear.jpg"
+    "image": "images/keeping-gloves/sow-keeping-gloves-gold.jpg"
   },
   {
     "id": "balls",
     "name": "Cricket Balls",
     "slug": "balls",
-    "icon": "fa-circle-dot",
+    "icon": "circle-dot",
     "description": "Four-piece alum tanned leather balls for Test, One Day, and T20 Day/Night matches.",
     "count": 2,
     "badge": "Match Grade",
     "featured": true,
-    "image": "images/cricket-balls.jpg"
+    "image": "images/balls/cricket-balls.jpg"
   },
   {
     "id": "kitbags",
     "name": "Kit Bags & Luggage",
     "slug": "kitbags",
-    "icon": "fa-suitcase-rolling",
+    "icon": "briefcase",
     "description": "Heavy-duty 1680D nylon wheelie and duffle bags with padded bat caves.",
     "count": 2,
     "badge": "Spacious",
@@ -83,9 +83,9 @@ window.SOW_CATEGORIES = window.CRIC_CATEGORIES = [
     "id": "accessories",
     "name": "Accessories & Care",
     "slug": "accessories",
-    "icon": "fa-screwdriver-wrench",
+    "icon": "wrench",
     "description": "Raw linseed oil, wooden knocking mallets, anti-scuff sheets, and chevron grips.",
-    "count": 1,
+    "count": 2,
     "badge": "Care Essentials",
     "featured": false,
     "image": "images/bat-willow.jpg"
@@ -105,10 +105,10 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
     "discountPercent": 25,
     "rating": 5.0,
     "reviewCount": 34,
-    "image": "images/gnx-400-ventus.jpg",
+    "image": "images/bats/gnx-400-ventus.jpg",
     "gallery": [
-      "images/gnx-400-ventus.jpg",
-      "images/gnx-400-ventus-label.jpg"
+      "images/bats/gnx-400-ventus.jpg",
+      "images/bats/gnx-400-ventus-label.jpg"
     ],
     "inStock": true,
     "stockCount": 8,
@@ -125,7 +125,13 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Batch": "April 2026 Genuine Match Stock"
     },
     "description": "Genuine Gray-Nicolls GNX 400 Ventus English Willow Cricket Bat in Short Handle (85 cm length). Features the iconic red checkered retro styling, premium English willow cleft, massive ping, and balanced featherweight pickup. 100% authentic with factory barcode & MRP label (MRP ₹16,999 with exclusive 25% discount at ₹12,750).",
-    "tags": ["Gray-Nicolls", "GNX 400 Ventus", "English Willow", "25% OFF", "SH Size 85cm"]
+    "tags": [
+      "Gray-Nicolls",
+      "GNX 400 Ventus",
+      "English Willow",
+      "25% OFF",
+      "SH Size 85cm"
+    ]
   },
   {
     "id": "prod-000-sg-slammer",
@@ -139,11 +145,11 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
     "discountPercent": 22,
     "rating": 5.0,
     "reviewCount": 26,
-    "image": "images/sg-slammer-classic-front.jpg",
+    "image": "images/bats/sg-slammer-classic-front.jpg",
     "gallery": [
-      "images/sg-slammer-classic-front.jpg",
-      "images/sg-slammer-classic-back.jpg",
-      "images/sg-slammer-classic-label.jpg"
+      "images/bats/sg-slammer-classic-front.jpg",
+      "images/bats/sg-slammer-classic-back.jpg",
+      "images/bats/sg-slammer-classic-label.jpg"
     ],
     "inStock": true,
     "stockCount": 7,
@@ -160,7 +166,55 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Verification": "Tamper-Evident Hologram, SG01CR130133 Barcode & QR Code"
     },
     "description": "Authentic SG Slammer Classic English Willow Cricket Bat (Autograph Sunil Gavaskar edition). Handcrafted from selected English willow featuring a 2.9 (1165g) featherlight pickup, massive sweet spot, full spine profile, and royal purple & gold Sanspareils Greenlands decals. 100% genuine with official factory hologram, barcode SG01CR130133, and scratch QR code. MRP ₹18,000 discounted by 22% to ₹14,040.",
-    "tags": ["SG", "Slammer Classic", "Sunil Gavaskar", "English Willow", "22% OFF", "SH Size 85cm"]
+    "tags": [
+      "SG",
+      "Slammer Classic",
+      "Sunil Gavaskar",
+      "English Willow",
+      "22% OFF",
+      "SH Size 85cm"
+    ]
+  },
+  {
+    "id": "prod-sow-wk-combo",
+    "name": "SOW Custom Wicket Keeping Gloves + Inners Combo",
+    "slug": "sow-custom-wicket-keeping-gloves-inners-combo",
+    "category": "wicket-keeping",
+    "categoryName": "Wicket Keeping",
+    "brand": "SOW Custom",
+    "price": 2400,
+    "originalPrice": 3200,
+    "discountPercent": 25,
+    "rating": 5.0,
+    "reviewCount": 19,
+    "image": "images/keeping-gloves/sow-keeping-gloves-gold.jpg",
+    "gallery": [
+      "images/keeping-gloves/sow-keeping-gloves-gold.jpg",
+      "images/keeping-gloves/sow-keeping-inners.jpg"
+    ],
+    "inStock": true,
+    "stockCount": 12,
+    "badge": "25% OFF",
+    "featured": true,
+    "isBestSeller": true,
+    "specs": {
+      "Brand": "SOW In-House Custom (No Third-Party Markup)",
+      "Package Includes": "Wicket Keeping Gloves + Free Padded Mesh Inners Combo",
+      "MRP": "₹3,200 (Special 25% Off: ₹2,400)",
+      "Gloves Build": "Perforated breathable white leather with metallic gold piping",
+      "Palm Grip": "High-traction textured octopus rubber for clean takes & catches",
+      "Inners": "Breathable aeromesh cotton inner gloves with snug elasticated cuffs",
+      "Size": "Senior Standard (Men's Fit)"
+    },
+    "description": "SOW Custom In-House Wicket Keeping Gloves complete with complimentary high-grade padded cotton mesh inners. Engineered with perforated ventilation panels, metallic gold piping, reinforced finger caps, and shock-absorbing palm padding. Custom crafted in-house for wicketkeepers demanding premium match feel without brand markups. Special 25% discount: ₹2,400 combo (MRP ₹3,200).",
+    "tags": [
+      "SOW Custom",
+      "In-House",
+      "Wicket Keeping",
+      "Keeping Gloves",
+      "Inners Combo",
+      "25% OFF"
+    ]
   },
   {
     "id": "prod-001",
@@ -174,7 +228,7 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
     "discountPercent": 15,
     "rating": 4.9,
     "reviewCount": 42,
-    "image": "images/bat-willow.jpg",
+    "image": "images/bats/bat-willow.jpg",
     "inStock": true,
     "stockCount": 6,
     "badge": "Player Grade",
@@ -190,7 +244,13 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Grains": "10-14 straight, clean unbleached grains"
     },
     "description": "Crafted from the top 1% of harvested English willow trees in England. The SS Ton Reserve Edition provides feather-light pickup with explosive rebound and monster ping. Finished with embossed chrome SS crest.",
-    "tags": ["English Willow", "Grade 1+", "SS TON", "Match Ready", "Free Knocking"]
+    "tags": [
+      "English Willow",
+      "Grade 1+",
+      "SS TON",
+      "Match Ready",
+      "Free Knocking"
+    ]
   },
   {
     "id": "prod-002",
@@ -204,7 +264,7 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
     "discountPercent": 15,
     "rating": 4.8,
     "reviewCount": 29,
-    "image": "images/bat-willow.jpg",
+    "image": "images/bats/bat-willow.jpg",
     "inStock": true,
     "stockCount": 9,
     "badge": "2026 Model",
@@ -220,7 +280,12 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Grains": "7-9 clean straight grains"
     },
     "description": "Engineered for aggressive strokemakers who dominate off the back foot. The distinctive blue and metallic silver holographic stickers look spectacular under floodlights.",
-    "tags": ["Gray-Nicolls", "Shockwave", "English Willow", "T20 Power"]
+    "tags": [
+      "Gray-Nicolls",
+      "Shockwave",
+      "English Willow",
+      "T20 Power"
+    ]
   },
   {
     "id": "prod-003",
@@ -234,7 +299,7 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
     "discountPercent": 16,
     "rating": 5.0,
     "reviewCount": 68,
-    "image": "images/bat-willow.jpg",
+    "image": "images/bats/bat-willow.jpg",
     "inStock": true,
     "stockCount": 4,
     "badge": "Legendary Series",
@@ -250,7 +315,12 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Grains": "8-11 equidistant grains"
     },
     "description": "The immortal Sunny Tonny silhouette celebrated worldwide. Known for its iconic sweet spot, perfect balance index, and unmatched longevity for red-ball and white-ball cricket.",
-    "tags": ["SG", "Sunny Tonny", "Heritage", "English Willow"]
+    "tags": [
+      "SG",
+      "Sunny Tonny",
+      "Heritage",
+      "English Willow"
+    ]
   },
   {
     "id": "prod-004",
@@ -264,7 +334,7 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
     "discountPercent": 17,
     "rating": 4.9,
     "reviewCount": 35,
-    "image": "images/bat-willow.jpg",
+    "image": "images/bats/bat-willow.jpg",
     "inStock": true,
     "stockCount": 5,
     "badge": "Pro Spec",
@@ -280,7 +350,12 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Grains": "10+ straight grains"
     },
     "description": "Favoured by international cricketers for over two decades. The Kahuna profile generates immense bat speed through the ball with effortless wrist-friendly balance.",
-    "tags": ["Kookaburra", "Kahuna", "Pro Grade", "Lime Green Grip"]
+    "tags": [
+      "Kookaburra",
+      "Kahuna",
+      "Pro Grade",
+      "Lime Green Grip"
+    ]
   },
   {
     "id": "prod-005",
@@ -294,7 +369,7 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
     "discountPercent": 25,
     "rating": 4.7,
     "reviewCount": 53,
-    "image": "images/bat-willow.jpg",
+    "image": "images/bats/bat-willow.jpg",
     "inStock": true,
     "stockCount": 18,
     "badge": "Value Deal",
@@ -310,7 +385,12 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Grains": "Cross grain Kashmir seasoned"
     },
     "description": "High value durable Kashmir willow bat specially treated and pressed for hard leather balls and club practice. Excellent punch at an affordable price.",
-    "tags": ["Kashmir Willow", "DSC", "Club Cricket", "Budget Pick"]
+    "tags": [
+      "Kashmir Willow",
+      "DSC",
+      "Club Cricket",
+      "Budget Pick"
+    ]
   },
   {
     "id": "prod-006",
@@ -324,7 +404,7 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
     "discountPercent": 18,
     "rating": 4.8,
     "reviewCount": 21,
-    "image": "images/bat-willow.jpg",
+    "image": "images/bats/bat-willow.jpg",
     "inStock": true,
     "stockCount": 7,
     "badge": "Ben Stokes Spec",
@@ -340,7 +420,12 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Grains": "8-10 uniform grains"
     },
     "description": "Designed in collaboration with world champion Ben Stokes. Features shorter blade length (540mm) with longer handle for elevated bat speed and pinpoint hand control.",
-    "tags": ["GM", "Diamond", "Ben Stokes", "DXM Computer Aided"]
+    "tags": [
+      "GM",
+      "Diamond",
+      "Ben Stokes",
+      "DXM Computer Aided"
+    ]
   },
   {
     "id": "prod-007",
@@ -354,7 +439,7 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
     "discountPercent": 19,
     "rating": 4.9,
     "reviewCount": 38,
-    "image": "images/batting-gear.jpg",
+    "image": "images/batting-pads/batting-gear.jpg",
     "inStock": true,
     "stockCount": 11,
     "badge": "Test Series",
@@ -368,7 +453,12 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Weight": "Ultralight 860g per pad"
     },
     "description": "International standard lightweight batting leg guards featuring state-of-the-art carbon reinforcement to disperse 150 km/h impacts without bulk.",
-    "tags": ["Batting Pads", "Leg Guards", "Kookaburra", "Carbon Pro"]
+    "tags": [
+      "Batting Pads",
+      "Leg Guards",
+      "Kookaburra",
+      "Carbon Pro"
+    ]
   },
   {
     "id": "prod-008",
@@ -382,7 +472,7 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
     "discountPercent": 18,
     "rating": 4.9,
     "reviewCount": 47,
-    "image": "images/batting-gear.jpg",
+    "image": "images/batting-gloves/batting-gear.jpg",
     "inStock": true,
     "stockCount": 15,
     "badge": "Top Seller",
@@ -396,7 +486,12 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Ventilation": "Dual-sided airflow mesh gussets with towel sweatband"
     },
     "description": "Favoured by leading IPL and international batters. Delivers unbeatable touch on the bat handle while providing elite shock absorption against rising deliveries.",
-    "tags": ["Batting Gloves", "SS TON", "Pittards Leather", "Split Finger"]
+    "tags": [
+      "Batting Gloves",
+      "SS TON",
+      "Pittards Leather",
+      "Split Finger"
+    ]
   },
   {
     "id": "prod-009",
@@ -410,7 +505,7 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
     "discountPercent": 17,
     "rating": 4.7,
     "reviewCount": 31,
-    "image": "images/batting-gear.jpg",
+    "image": "images/batting-pads/batting-gear.jpg",
     "inStock": true,
     "stockCount": 14,
     "badge": "Dual Guard",
@@ -423,7 +518,12 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Fit": "Pre-curved anatomical contouring for left & right handers"
     },
     "description": "Ergonomically pre-shaped combo thigh pad that prevents awkward slippage during swift running between the wickets.",
-    "tags": ["Thigh Guard", "SG", "Protection", "Body Armor"]
+    "tags": [
+      "Thigh Guard",
+      "SG",
+      "Protection",
+      "Body Armor"
+    ]
   },
   {
     "id": "prod-010",
@@ -450,7 +550,11 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Profile": "Low profile slips invisibly beneath cricket jersey"
     },
     "description": "Essential protection against unpredictable short-pitched bowling. Sits comfortably against the ribcage with moisture-wicking comfort lining.",
-    "tags": ["Chest Guard", "Gray-Nicolls", "Safety"]
+    "tags": [
+      "Chest Guard",
+      "Gray-Nicolls",
+      "Safety"
+    ]
   },
   {
     "id": "prod-011",
@@ -478,7 +582,13 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Weight": "Only 690g (featherlight on the neck)"
     },
     "description": "The gold standard of international cricket safety. Worn by top cricketers across Test and T20 leagues worldwide. The titanium grille eliminates weight while providing extreme rigid barrier protection.",
-    "tags": ["Masuri", "Helmet", "Titanium", "Vision Series", "BS Certified"]
+    "tags": [
+      "Masuri",
+      "Helmet",
+      "Titanium",
+      "Vision Series",
+      "BS Certified"
+    ]
   },
   {
     "id": "prod-012",
@@ -505,7 +615,12 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Neck Guard": "Rear retention dial with extended rear protection plate"
     },
     "description": "High tech innovation tailored for lengthy innings in warm weather. Outstanding acoustic and airflow properties keep the batsman focused in the zone.",
-    "tags": ["Shrey", "Masterclass", "Helmet", "Titanium"]
+    "tags": [
+      "Shrey",
+      "Masterclass",
+      "Helmet",
+      "Titanium"
+    ]
   },
   {
     "id": "prod-013",
@@ -519,7 +634,7 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
     "discountPercent": 19,
     "rating": 4.8,
     "reviewCount": 24,
-    "image": "images/batting-gear.jpg",
+    "image": "images/keeping-gloves/sow-keeping-gloves-gold.jpg",
     "inStock": true,
     "stockCount": 6,
     "badge": "Pro Keeper",
@@ -532,7 +647,12 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Padding": "Multi-density gel and shock-absorbing foam layer"
     },
     "description": "Gives keepers instant stickiness when gathering swinging or spinning balls. Ergonomically contoured to stay naturally open in the ready stance.",
-    "tags": ["Wicket Keeping", "SS TON", "Gloves", "Octopus Palm"]
+    "tags": [
+      "Wicket Keeping",
+      "SS TON",
+      "Gloves",
+      "Octopus Palm"
+    ]
   },
   {
     "id": "prod-014",
@@ -546,7 +666,7 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
     "discountPercent": 17,
     "rating": 5.0,
     "reviewCount": 51,
-    "image": "images/cricket-balls.jpg",
+    "image": "images/balls/cricket-balls.jpg",
     "inStock": true,
     "stockCount": 16,
     "badge": "Match Official",
@@ -560,7 +680,13 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Weight": "156g (5.5 oz) regulation match weight"
     },
     "description": "The world's premier match ball. Preserves genuine swing, pronounced seam stability, and high shape retention over 80+ overs on abrasive turf pitches.",
-    "tags": ["Kookaburra", "Cricket Balls", "Leather Ball", "Pink Ball", "Red Ball"]
+    "tags": [
+      "Kookaburra",
+      "Cricket Balls",
+      "Leather Ball",
+      "Pink Ball",
+      "Red Ball"
+    ]
   },
   {
     "id": "prod-015",
@@ -574,7 +700,7 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
     "discountPercent": 17,
     "rating": 4.8,
     "reviewCount": 62,
-    "image": "images/cricket-balls.jpg",
+    "image": "images/balls/cricket-balls.jpg",
     "inStock": true,
     "stockCount": 20,
     "badge": "Club Bulk Deal",
@@ -586,7 +712,12 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Usage": "League tournaments, club matches, and intensive academy nets"
     },
     "description": "The trusted choice for domestic cricket leagues across the sub-continent and UK clubs. Durable seam construction with consistent bounce off good length.",
-    "tags": ["SG", "Cricket Balls", "Club Pack", "4-Piece"]
+    "tags": [
+      "SG",
+      "Cricket Balls",
+      "Club Pack",
+      "4-Piece"
+    ]
   },
   {
     "id": "prod-016",
@@ -614,7 +745,13 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Fabric": "Heavy duty waterproof 1680D ballistic nylon"
     },
     "description": "Built for travelling cricketers carrying complete match kits. Stands upright effortlessly in compact dressing rooms and maneuvers smoothly across grassy outfields.",
-    "tags": ["SG", "Kitbag", "Wheelie Bag", "Bat Cave", "Heavy Duty"]
+    "tags": [
+      "SG",
+      "Kitbag",
+      "Wheelie Bag",
+      "Bat Cave",
+      "Heavy Duty"
+    ]
   },
   {
     "id": "prod-017",
@@ -640,7 +777,12 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Compartments": "Dedicated shoe tunnel, side bat pockets, mesh accessory organizers"
     },
     "description": "Ergonomically engineered for weekend warriors and club cricketers seeking supreme organization without back strain.",
-    "tags": ["DSC", "Kit Bag", "Rebel Pro", "Luggage"]
+    "tags": [
+      "DSC",
+      "Kit Bag",
+      "Rebel Pro",
+      "Luggage"
+    ]
   },
   {
     "id": "prod-018",
@@ -665,62 +807,13 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "Compatibility": "All English and Kashmir willow cricket bats"
     },
     "description": "Everything required to properly knock in, oil, and shield your prized willow bat from edge cracks and toe swellings for peak season durability.",
-    "tags": ["Bat Care", "Mallet", "Linseed Oil", "Anti Scuff", "Grip"]
-  }
-];
-
-window.SOW_REVIEWS = window.CRIC_REVIEWS = [
-  {
-    "id": "rev-1",
-    "name": "Vikramaditya R.",
-    "role": "Premier League Batsman",
-    "avatar": "VR",
-    "location": "Mumbai, India",
-    "rating": 5,
-    "title": "Monster Ping on the SS Reserve Edition!",
-    "comment": "I ordered the SS Ton Reserve Edition with their custom knocking-in service. The bat arrived oiled, taped, and pinging like a cannon right out of the box. Hit 87 runs in my first club match with it. SOW's packing was immaculate!",
-    "product": "SS Ton Reserve Edition English Willow Cricket Bat",
-    "verified": true,
-    "date": "2 days ago"
-  },
-  {
-    "id": "rev-2",
-    "name": "Marcus Thornton",
-    "role": "Club Captain",
-    "avatar": "MT",
-    "location": "Surrey, United Kingdom",
-    "rating": 5,
-    "title": "Fast international delivery to the UK",
-    "comment": "Shipped DHL express to London in under 4 business days. Genuine Grade 1 willow with 11 equidistant grains. Exactly as weighed in their WhatsApp video consultation.",
-    "product": "Gray-Nicolls Shockwave 2.1 500 Bat",
-    "verified": true,
-    "date": "1 week ago"
-  },
-  {
-    "id": "rev-3",
-    "name": "Aman Deep S.",
-    "role": "State Wicketkeeper",
-    "avatar": "AD",
-    "location": "Punjab, India",
-    "rating": 5,
-    "title": "Masuri Titanium is feather-light and rock-solid",
-    "comment": "You can barely feel the weight of this helmet on your neck, yet the titanium eye-line grille gives 100% confidence facing 140km/h pacers. Worth every single penny for safety.",
-    "product": "Masuri Vision Series Pro Titanium Cricket Helmet",
-    "verified": true,
-    "date": "2 weeks ago"
-  },
-  {
-    "id": "rev-4",
-    "name": "Rohan Patel",
-    "role": "All-Rounder",
-    "avatar": "RP",
-    "location": "Melbourne, Australia",
-    "rating": 5,
-    "title": "Kookaburra balls hold their seam forever",
-    "comment": "Box of 6 pink Kahuna balls arrived in top-grade condition. The seam remains elevated even after 40 overs of hard bowling on synthetic and turf. Outstanding quality.",
-    "product": "Kookaburra Kahuna 4-Piece Leather Ball",
-    "verified": true,
-    "date": "3 weeks ago"
+    "tags": [
+      "Bat Care",
+      "Mallet",
+      "Linseed Oil",
+      "Anti Scuff",
+      "Grip"
+    ]
   }
 ];
 

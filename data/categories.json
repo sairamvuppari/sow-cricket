@@ -5,7 +5,7 @@
     "slug": "all",
     "icon": "sparkles",
     "description": "Explore the complete collection of world-class authentic cricket gear.",
-    "count": 18,
+    "count": 21,
     "featured": true
   },
   {
@@ -14,10 +14,10 @@
     "slug": "bats",
     "icon": "shield",
     "description": "Handcrafted English Willow & Kashmir Willow bats with immense power and balance.",
-    "count": 6,
+    "count": 8,
     "badge": "Top Seller",
     "featured": true,
-    "image": "images/bat-willow.jpg"
+    "image": "images/bats/bat-willow.jpg"
   },
   {
     "id": "batting-gear",
@@ -28,7 +28,7 @@
     "count": 4,
     "badge": "Pro Choice",
     "featured": true,
-    "image": "images/batting-gear.jpg"
+    "image": "images/batting-pads/batting-gear.jpg"
   },
   {
     "id": "helmets",
@@ -50,7 +50,7 @@
     "count": 2,
     "badge": "Elite",
     "featured": false,
-    "image": "images/batting-gear.jpg"
+    "image": "images/keeping-gloves/sow-keeping-gloves-gold.jpg"
   },
   {
     "id": "balls",
@@ -61,7 +61,7 @@
     "count": 2,
     "badge": "Match Grade",
     "featured": true,
-    "image": "images/cricket-balls.jpg"
+    "image": "images/balls/cricket-balls.jpg"
   },
   {
     "id": "kitbags",

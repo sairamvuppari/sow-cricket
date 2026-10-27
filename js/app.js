@@ -475,7 +475,7 @@
             <img 
               src="${prod.image}" 
               alt="${prod.name}" 
-              class="w-full h-full ${prod.category === 'bats' ? 'object-contain p-2.5' : 'object-cover'} group-hover:scale-105 transition-transform duration-500" 
+              class="w-full h-full ${prod.category === 'bats' || prod.category === 'wicket-keeping' ? 'object-contain p-2.5' : 'object-cover'} group-hover:scale-105 transition-transform duration-500" 
               loading="lazy"
             />
             <!-- Quick View Overlay Button -->
