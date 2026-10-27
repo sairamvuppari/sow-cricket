@@ -5,7 +5,7 @@
     "slug": "all",
     "icon": "sparkles",
     "description": "Explore the complete collection of world-class authentic cricket gear.",
-    "count": 25,
+    "count": 26,
     "featured": true
   },
   {
@@ -14,7 +14,7 @@
     "slug": "bats",
     "icon": "shield",
     "description": "Handcrafted English Willow & Kashmir Willow bats with immense power and balance.",
-    "count": 9,
+    "count": 10,
     "badge": "Top Seller",
     "featured": true,
     "image": "images/bats/bat-willow.jpg"

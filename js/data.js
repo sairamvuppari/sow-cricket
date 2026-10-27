@@ -10,7 +10,7 @@ window.SOW_CATEGORIES = window.CRIC_CATEGORIES = [
     "slug": "all",
     "icon": "sparkles",
     "description": "Explore the complete collection of world-class authentic cricket gear.",
-    "count": 25,
+    "count": 26,
     "featured": true
   },
   {
@@ -19,7 +19,7 @@ window.SOW_CATEGORIES = window.CRIC_CATEGORIES = [
     "slug": "bats",
     "icon": "shield",
     "description": "Handcrafted English Willow & Kashmir Willow bats with immense power and balance.",
-    "count": 9,
+    "count": 10,
     "badge": "Top Seller",
     "featured": true,
     "image": "images/bats/bat-willow.jpg"
@@ -226,6 +226,48 @@ window.SOW_PRODUCTS = window.CRIC_PRODUCTS = [
       "English Willow",
       "25% OFF",
       "SH Size 85cm"
+    ]
+  },
+  {
+    "id": "prod-000-somi-vision",
+    "name": "SOMI Vision English Willow Cricket Bat",
+    "slug": "somi-vision-english-willow-bat",
+    "category": "bats",
+    "categoryName": "Cricket Bats",
+    "brand": "SOMI",
+    "price": 10080,
+    "originalPrice": 14000,
+    "discountPercent": 28,
+    "rating": 5.0,
+    "reviewCount": 16,
+    "image": "images/bats/somi-vision-front.jpg",
+    "gallery": [
+      "images/bats/somi-vision-front.jpg",
+      "images/bats/somi-vision-tag.jpg",
+      "images/bats/somi-vision-label.jpg"
+    ],
+    "inStock": true,
+    "stockCount": 8,
+    "badge": "28% OFF",
+    "featured": true,
+    "isBestSeller": true,
+    "specs": {
+      "Willow": "Handcrafted English Willow (June 2025 Batch)",
+      "Model": "SOMI Vision Professional Edition",
+      "Size / Length": "Full Size SH (Length 85 cm)",
+      "MRP": "₹14,000 / Tag ₹13,999 (Special 28% Off: ₹10,080)",
+      "Grip": "White Ripple Cushion Chevron Grip with Black Accent Rings",
+      "Manufacturer": "79 Sports, Jalandhar (Official somicricket.com)",
+      "Profile": "Full spine power profile with clean straight grains & feather pickup"
+    },
+    "description": "Authentic SOMI Vision English Willow Cricket Bat in Full Size SH (85 cm length). Handcrafted by 79 Sports, Jalandhar using hand-selected English willow cleft with clean straight grains, substantial power edges, and featherlight pickup. Features embossed gold & carbon-black metallic decals with white ripple chevron grip. 100% genuine with factory tag and barcode. MRP ₹14,000 discounted by 28% to ₹10,080.",
+    "tags": [
+      "SOMI",
+      "Vision",
+      "English Willow",
+      "28% OFF",
+      "SH Size 85cm",
+      "79 Sports"
     ]
   },
   {
